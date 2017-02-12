@@ -1,30 +1,32 @@
 <?php
 
+include "public/views/header.phtml";
 $url = isset($_GET['_url'])?$_GET['_url']:'/';
 switch ($url){
     case '/':
-        include "index.html";
+        include "public/views/contents/index.phtml";
         break;
     case '/index':
-        include "index.html";
+        include "public/views/contents/index.phtml";
         break;
     case '/bemutatkozas':
-        include "page.html";
+        include "public/views/contents/bemutatkozas.phtml";
         break;
     case '/referencia':
-        include "page.html";
+        include "public/views/contents/referencia.phtml";
         break;
     case '/kapcsolat':
-        include "page.html";
+        include "public/views/contents/kapcsolat.phtml";
         break;
     case '/express_szallitmanyozas':
-        include "page.html";
+        include "public/views/contents/express.phtml";
         break;
     case '/gyujto_fuvarozas':
-        include "page.html";
+        include "public/views/contents/gyujto.phtml";
         break;
     default:
-        include "404.html";
+        include "public/views/contents/404.phtml";
         break;
 }
-//include "index.html";
+
+include "public/views/footer.phtml";
