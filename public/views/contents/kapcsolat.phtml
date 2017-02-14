@@ -1,42 +1,5 @@
 <!-- Header Carousel -->
-<header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image:url('/public/images/01.jpg');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 1</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('/public/images/02.jpg');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 2</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('/public/images/03.jpg');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 3</h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-</header>
+<?php include "public/views/partials/slider.phtml";?>
 
 <!-- Page Content -->
 <div class="container">
@@ -52,11 +15,16 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio risus, laoreet sit amet dapibus sed, bibendum nec lacus. Cras malesuada erat sit amet vulputate ultricies. Aenean vel mollis lacus. Nullam ut ante vitae sem feugiat interdum nec eu leo. Aliquam augue lorem, mollis eget leo eget, efficitur sagittis mi. Vestibulum eu varius leo, quis laoreet nisi. Donec quis mauris iaculis, vulputate ante in, elementum enim. Morbi vestibulum nulla a congue ultricies. Curabitur tincidunt augue sit amet dui fermentum consectetur. Aenean orci nisi, eleifend eu lacus eu, mattis tincidunt purus. Nunc sem ante, hendrerit non mi quis, molestie scelerisque erat.
-
-Pellentesque magna arcu, sodales vitae nunc vitae, pulvinar elementum justo. Etiam accumsan pellentesque odio, at elementum libero hendrerit at. In vel venenatis massa, at laoreet dolor. Cras imperdiet eget lacus sed interdum. Cras ac viverra arcu. Donec a enim vel ligula tempor molestie sit amet a elit. Morbi tempor ultricies blandit. Proin leo nisi, volutpat in blandit sed, sodales vulputate eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sit amet erat aliquet, tempor erat vitae, sodales nisi. Pellentesque ac libero ligula.
-
-Praesent facilisis lectus non aliquet laoreet. Donec in sapien dui. Curabitur elementum, neque in cursus dapibus, velit dui fringilla orci, eget tincidunt sem libero eu augue. Proin vel ullamcorper nulla, eget convallis dolor. Nam venenatis aliquet massa sed mollis. Cras sodales laoreet sodales. Aliquam iaculis mauris vel nibh sodales malesuada. Integer sit amet pellentesque est. Integer non orci eget metus feugiat dignissim.</span>
+            <span>
+                <h3>Fuvarszervezés,Ügyfélszolgálat:</h3>
+                <b>Csizmadia István	</b>
+                <p>+36 30 670 1376</p>
+                <br/>
+                <h3>HR ügyintézés:</h3>
+                <b>Kardos Enikő</b>
+                <p>+36 30 670 1376</p>
+                <p>+30 992 4722</p>
+            </span>
         </div>
         <div class="col-lg-6">
             <div id="map" style="width: 100%; height: 300px"></div>
